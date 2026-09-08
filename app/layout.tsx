@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "App",
-  description: "Built by Constructor",
+  title: "La Cucina di Marco | Cocina italiana en Ciudad de México",
+  description: "Cocina italiana de raíz toscana, recetas familiares y una cuidada selección de vinos.",
 };
 
 export default function RootLayout({

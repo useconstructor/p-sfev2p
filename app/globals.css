@@ -1,33 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
 @import "tailwindcss";
-
-@theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.97 0 0);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.97 0 0);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.97 0 0);
-  --color-accent-foreground: oklch(0.205 0 0);
-  --color-destructive: oklch(0.577 0.245 27.325);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
-  --radius: 0.5rem;
-}
-
-@layer base {
-  * {
-    border-color: var(--color-border);
-  }
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-  }
-}
+@theme{--font-sans:"Inter",sans-serif;--font-serif:"Cormorant Garamond",serif;--color-cream:#F5F0E8;--color-paper:#F9F6F1;--color-burgundy:#3D1F1F;--color-espresso:#2C1810;--color-stone:#756b64;--color-brass:#B7965A}
+@layer base{html{scroll-behavior:smooth}body{margin:0;background:#F5F0E8;color:#2C1810;font-family:"Inter",sans-serif}button,a{cursor:pointer}input,select,textarea{width:100%;border:1px solid rgb(44 24 16/.18);background:#F9F6F1;padding:.85rem 1rem;font-size:.875rem;outline-color:#3D1F1F}}
+@layer components{.eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.3em;color:#3D1F1F}.section-title{margin-top:1rem;font-family:"Cormorant Garamond",serif;font-size:clamp(3rem,6vw,4.5rem);line-height:.98;letter-spacing:-.02em}.form-label{display:block;margin-bottom:.5rem;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em}.footer-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.2em;color:#B7965A}}
+.hero-art{background:radial-gradient(ellipse at 54% 49%,transparent 0 7%,#d2a85f 7.5% 9%,#f3e2bb 9.5% 20%,#996749 20.5% 22%,transparent 22.5%),radial-gradient(circle at 67% 39%,#eee1ad 0 1.2%,transparent 1.5%),linear-gradient(125deg,#1a100c,#553124 43%,#210f0c)}
+.portrait{background:radial-gradient(circle at 50% 28%,#d0a276 0 10%,transparent 11%),radial-gradient(ellipse at 50% 43%,#f4eadc 0 18%,transparent 19%),linear-gradient(145deg,#49261f,#160f0c)}
+.gallery-a{background:radial-gradient(circle at 55% 50%,#bd8c55 0 4%,transparent 4.5%),linear-gradient(145deg,#21110e,#674032)}.gallery-b{background:linear-gradient(135deg,#76442d,#2d1712)}.gallery-c{background:radial-gradient(circle at 50% 45%,#c7a465 0 12%,transparent 13%),linear-gradient(45deg,#263126,#647051)}.gallery-d{background:linear-gradient(135deg,#8c7457,#3d291d)}.gallery-e{background:linear-gradient(155deg,#211816,#6c4c3e)}
+.wine-art{background:radial-gradient(circle,#492424 0 46%,transparent 47%),repeating-radial-gradient(circle,#B7965A22 0 2px,transparent 3px 15px)}.cta-art{background:linear-gradient(#1c0e0ad1,#1c0e0ae6),radial-gradient(circle at 25% 20%,#8e6548,transparent 38%),#24140f}@media(max-width:767px){.gallery-a{min-height:430px}}
